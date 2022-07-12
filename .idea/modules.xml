@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/next-typescript-twin-styled-eslint-boiler.iml" filepath="$PROJECT_DIR$/.idea/next-typescript-twin-styled-eslint-boiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/next-ts-twin-styled-boiler.iml" filepath="$PROJECT_DIR$/.idea/next-ts-twin-styled-boiler.iml" />
     </modules>
   </component>
 </project>
