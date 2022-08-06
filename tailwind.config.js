@@ -5,6 +5,12 @@ module.exports = {
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    extend: {
+      fontFamily: {
+        Oswald: ["Oswald", "cursive"],
+        Source: ['Source Sans Pro', 'cursive'],
+      },
+    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -18,6 +24,7 @@ module.exports = {
 
       black: colors.black,
       white: colors.white,
+      gray: colors.coolGray,
       red: colors.red,
       yellow: colors.amber,
       green: colors.emerald,
@@ -25,6 +32,8 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      gray: colors.gray
+
     },
     spacing: {
       px: '1px',

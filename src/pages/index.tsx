@@ -1,11 +1,12 @@
 import { NextPage } from "next";
 import styled from "styled-components";
 import tw from "twin.macro"
+import Home from "@/pages/Home";
 
 
 const HomeContainer = styled.div`
     ${tw`
-    bg-black
+    bg-gray-500
     w-screen
     h-screen
     
@@ -16,9 +17,7 @@ const HomeContainer = styled.div`
 const IndexPage: NextPage = () => {
   return (
     <>
-      <HomeContainer>
-
-      </HomeContainer>
+      <Home/>
     </>
   );
 };
