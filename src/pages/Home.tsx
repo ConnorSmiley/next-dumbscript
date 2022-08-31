@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro"
+import Link from 'next/link'
 import DumbscriptSVG from "../Images/Logo/dumbscriptLogo.svg";
 import SublimeTextSVG from "../Images/Logo/sublime-text.svg";
 import TosLogoSVG from "../images/Logo/tosLogo.svg"
@@ -325,12 +326,44 @@ export interface IHomeProps {
 }
 
 const Home: React.FunctionComponent<IHomeProps> = () => {
+  const handleClick = () => {
+    window.open("https://www.sublimetext.com/download");
+  };
 
     return(
        <>
         <HomeContainer>
             <HomeStyle>
+              <LogoHolder>
+                <TextH>Dumbscript</TextH>
+                <DumbscriptLogo />
+              </LogoHolder>
+              <Description>
+                Write thinkscript easier and faster with Subtime Text and ThinkOrSwim
+              </Description>
+              <Link to="/Buy" activeClass="active" spy={true} smooth={true} offset={0}
+                    duration={500} class="hover:text-[#00FE1E] cursor-pointer">
+                <Buy>
+                  Buy
+                </Buy>
+              </Link>
 
+              <LowerHalf>
+                <Grid>
+                  <TextP><a className="underline decoration-yellow-500 decoration-2 underline-offset-8">Sublime
+                    Text</a></TextP>
+                  <TextP><a
+                    className="underline decoration-green-500 decoration-2 underline-offset-8">ThinkOrSwim</a></TextP>
+                  <SubtextLogo />
+                  <TosLogo />
+                  <DownloadSublime>Link to <br />Sublime Text</DownloadSublime>
+                  <TosLink>Link to <br />ThinkOrSwim</TosLink>
+                  <DownloadLinkST
+                    onClick={() => window.open("https://www.sublimetext.com/download", "_blank")}>Download</DownloadLinkST>
+                  <DownloadLinkTOS
+                    onClick={() => window.open("https://www.tdameritrade.com/tools-and-platforms/thinkorswim/desktop/download.html", "_blank")}>Download</DownloadLinkTOS>
+                </Grid>
+              </LowerHalf>
             </HomeStyle>
         </HomeContainer>
        </>
